@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif; 
+}
+body{
+    background-color: whitesmoke; 
+    margin: 0;
+}
+.top_bar{
+    position: static;
+    background-color: rgb(13, 36, 47);
+    padding-top: 15px;
+    height: 50px;
+    margin: 0 0;
+}
+.icon{
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+}
+.logo{
+    float: left;
+    width: 35%;
+    display: flex;
+    margin-left: 20px;
+}
+.logo svg{
+    color: rgb(116, 227, 239);
+    margin-top: 4px;
+}
+.part1{
+    float: left;
+    font-size: 1.5em;
+    color: rgb(116, 227, 239);
+}
+.part3{
+    font-size: 1.2em;
+    color: rgb(116, 227, 239);
+}
+.part2{
+    color: rgb(238, 20, 122);
+}
+.menu{
+    padding: 0 0;
+    float: right;
+    margin-right: 50px;
+    display: flex;
+}
+.menu li {
+    margin: 0 15px;
+    list-style: none;
+ }
+ .menu li a {
+     font-size: 1.5em;
+     text-decoration: 0;
+     color: white;
+     position: relative;
+ }
+ .menu li a::before {
+     position: absolute;
+     top: -5px;
+     left: 0;
+     content: "";
+     width: 0;
+     height: 2px;
+     border-radius: 6px;
+     background-color: rgb(238, 20, 122);
+     transition: 0.5s;
+ }
+ .menu li a:hover::before {
+     width: 100%;
+ }
+ .menu li a::after {
+     position: absolute;
+     bottom: -5px;
+     right: 0;
+     content: "";
+     width: 0;
+     height: 2px;
+     border-radius: 6px;
+     background-color: rgb(238, 20, 122);
+     transition: 0.5s;
+ }
+ .menu li a:hover::after {
+     width: 100%;
+ }
+ .menu li a:hover {
+     color: rgb(116, 227, 239);
+ }
+.text{
+    font-size: 1.2em;
+    color: rgb(26, 222, 98);
+    margin-left: 20px;
+}
+.all h2{
+    color: white;
+    font-size: 1.8em;
+    margin-left: 20px;
+}
+.part0{ 
+    margin-left: 20px;
+    font-size: 4.5em;
+    color: rgb(116, 227, 239);
+}
+.all{
+    background-image: url(../image/sports-car-background-ybiazay5uj4y5r5p.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 500px;
+    padding-top: 80px;
+}
+.all button {
+    margin-top: 20px;
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: #c74747;
+    border: 0;
+    transition: 0.5s;
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.all button  a {
+   text-decoration: 0;
+   color: #fff;
+   font-weight: bold;
+   text-transform: uppercase;
+   transition: 0.5s;
+}
+.all button::after {
+   position: absolute;
+   left: 5px;
+   top: 5px;
+   content: "";
+   height: 100%;
+   width: 100%;
+   z-index: 0;
+   background-color: #ff9f1891;
+}
+.all button:hover a{
+  letter-spacing: 1px;
+}
+footer {
+    background-color: rgba(0,0,0,0.05);
+}
+footer .services_list {
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service img {
+    width: 40px;
+    background-color: #27ae60;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+}
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px auto;
+}
+.service  p {
+    color: #333;
+}
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 2px;
+    width: 100%;
+}
+.footer_text {
+    text-align: center;
+    font-size: 15px;
+    padding: 8px 0;
+}
+.footer_text span {
+    color: #27ae60;
+}
+.toggle_menu {
+    display: none;
+}
+@media (max-width:864px){
+    .all{
+        height: 300px;
+    }
+    .car  img {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width:564px){
+    .all{
+        padding-top: 2px;
+    }
+}
+@media (max-width:964px){
+    .part0{
+        font-size: 3.2em;
+    }
+    .all{
+        padding-top: 30px;
+        height: 400px;
+    }
+}

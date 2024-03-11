@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif; 
+}
+body{
+    background-color: rgb(13, 36, 47);
+    padding-top: 50px;
+}
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.car {
+    height: max-content;
+    width: 80%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    transition: 0.5s;
+
+}
+h2{
+    color: white;
+    font-size: 4em;
+    margin-left: 50px;
+}
+.car input{
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgb(13, 36, 47);
+    color: white;
+}
+.car input::placeholder{
+    color: white;
+}
+.car input[type=submit]{
+    width: 200px;
+    background-color: rgb(33, 196, 155);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.add{
+    width: 200px;
+    background-color: rgb(33, 196, 155);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.update{
+    width: 200px;
+    background-color: rgb(33, 196, 155);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.message
+{
+    color: red;
+    margin: 10px 0;
+}
